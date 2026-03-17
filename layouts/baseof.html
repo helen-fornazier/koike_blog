@@ -2,6 +2,10 @@
 <html lang="{{ .Site.Language.Lang }}" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
 <head>
   {{- partial "head.html" . -}}
+  {{- with site.Params.clickySiteId -}}
+  <script async data-id="{{ . }}" src="//static.getclicky.com/js"></script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ . }}ns.gif" /></p></noscript>
+  {{- end -}}
 </head>
 <body>
   <div class="d-flex flex-column min-height-full">

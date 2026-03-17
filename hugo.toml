@@ -27,6 +27,7 @@ showAuthor = true
 showReadingTime = true
 showShareButtons = true
 sidebar = true
+clickySiteId = "101503092"
 
 # Giscus comments — generate your values at https://giscus.app/
 [params.giscus]
