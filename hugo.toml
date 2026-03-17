@@ -13,14 +13,12 @@ enableRobotsTXT = true
 contentDir = "content/en"
 languageName = "English"
 weight = 1
-[languages.en.params]
-description = "Helen Koike's personal blog — Linux kernel, open source events, and Igalia."
 
 [params]
 author = "Helen Koike"
 dateFormat = "2006-01-02"
 defaultTheme = "auto"
-description = "Helen Koike's personal blog — Linux kernel, open source events, and Igalia."
+description = "Helen Koike's personal blog — Linux kernel, open source events, and other things I find interesting."
 primaryColor = "#0969da"
 recentPostsCount = 5
 showAuthor = true
