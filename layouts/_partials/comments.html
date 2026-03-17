@@ -14,6 +14,7 @@
     data-input-position="{{ .inputPosition | default "top" }}"
     data-theme="{{ .theme | default "preferred_color_scheme" }}"
     data-lang="{{ .lang | default "en" }}"
+    {{- with .loading }}data-loading="{{ . }}"{{ end }}
     crossorigin="anonymous"
     async>
   </script>

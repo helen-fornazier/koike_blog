@@ -30,11 +30,11 @@ sidebar = true
 
 # Giscus comments — generate your values at https://giscus.app/
 [params.giscus]
-enabled = false
-repo = "helen-fornazier/helen-fornazier.github.io"
-repoId = ""            # Fill in from giscus.app
+enabled = true
+repo = "helen-fornazier/koike_blog"
+repoId = "R_kgDORptU0Q"
 category = "Announcements"
-categoryId = ""        # Fill in from giscus.app
+categoryId = "DIC_kwDORptU0c4C4oS-"
 mapping = "pathname"
 strict = "0"
 reactionsEnabled = "1"
@@ -42,6 +42,7 @@ emitMetadata = "0"
 inputPosition = "top"
 theme = "preferred_color_scheme"
 lang = "en"
+loading = "lazy"
 
 [[params.sidebarModules]]
 partial = "aboutme"
