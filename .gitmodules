@@ -1,0 +1,3 @@
+[submodule "themes/hugo-primer-blog"]
+	path = themes/hugo-primer-blog
+	url = https://github.com/ngs/hugo-primer-blog
