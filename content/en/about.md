@@ -6,7 +6,9 @@ layout: "single"
 
 ## Helen Koike
 
-Free Software Contributor at [Igalia](https://www.igalia.com/team/koike), based in Brazil.
+<img src="/images/helen-drogo.jpg" alt="Helen and Drogo" width="200" style="float: right; margin-left: 1rem; margin-bottom: 1rem;">
+
+Helen Koike is a Linux Kernel Software Engineer at [Igalia](https://www.igalia.com/team/koike), based in Brazil.
 
 > "Delivering value through software, in all aspects, technical and non-technical, fostering communities and learning a lot in this very interesting journey called life :)"
 
