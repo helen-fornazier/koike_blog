@@ -7,11 +7,11 @@
   </h2>
   <ul class="list-style-none m-0 p-0" style="display: flex; flex-direction: column; gap: 0.35rem;">
     <li>
-      <a href="/index.xml" class="Link--secondary f6">All posts</a>
+      <a href="{{ "index.xml" | relURL }}" class="Link--secondary f6">All posts</a>
     </li>
     {{- range site.Taxonomies.tags -}}
     <li>
-      <a href="/tags/{{ .Page.Title | urlize }}/index.xml" class="Link--secondary f6">
+      <a href="{{ .Page.RelPermalink }}index.xml" class="Link--secondary f6">
         #{{ .Page.Title }}
       </a>
     </li>
