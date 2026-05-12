@@ -1,3 +1,4 @@
+{{- if ne $.Params.disableComments true -}}
 {{- with site.Params.giscus -}}
 {{- if .enabled -}}
 <div class="border-top pt-4 mt-4" id="comments">
@@ -56,5 +57,6 @@
   </script>
   </div>
 </div>
+{{- end -}}
 {{- end -}}
 {{- end -}}

@@ -40,7 +40,7 @@
     {{ .Content }}
   </div>
 
-  {{- if site.Params.showShareButtons -}}
+  {{- if and site.Params.showShareButtons (ne .Params.hideShareButtons true) -}}
   <div class="border-top pt-4 mt-4">
     <p class="f5 text-bold mb-2">{{ i18n "share" | default "Share" }}</p>
     <div class="d-flex flex-wrap" style="gap: 0.5rem;">

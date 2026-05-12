@@ -80,6 +80,11 @@ name = "About"
 url = "/about/"
 weight = 2
 
+[[menus.main]]
+name = "Privacy"
+url = "/privacy/"
+weight = 3
+
 [taxonomies]
 archive = "archives"
 tag = "tags"
