@@ -6,6 +6,7 @@
   <script async data-id="{{ . }}" src="//static.getclicky.com/js"></script>
   <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/{{ . }}ns.gif" /></p></noscript>
   {{- end -}}
+  {{- partial "matomo.html" . -}}
 </head>
 <body>
   <div class="d-flex flex-column min-height-full">

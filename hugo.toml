@@ -26,6 +26,8 @@ showReadingTime = true
 showShareButtons = true
 sidebar = true
 clickySiteId = "101503092"
+matomoUrl = "//stats.igalia.com/"
+matomoSiteId = "27"
 ogImage = "https://koike.dev.br/images/ln-koike.png"
 
 # Giscus comments — generate your values at https://giscus.app/

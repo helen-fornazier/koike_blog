@@ -1,0 +1,7 @@
+{{- with site.Params.matomoSiteId -}}
+{{- $matomoBase := site.Params.matomoUrl | default "//stats.igalia.com/" -}}
+<!-- Matomo (external script avoids broken JS when hugo --minify rewrites inline scripts) -->
+<script src="{{ "js/matomo-analytics.js" | relURL }}" data-matomo-base="{{ $matomoBase }}" data-matomo-site="{{ . }}"></script>
+<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="{{ $matomoBase }}matomo.php?idsite={{ . }}&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+{{- end -}}
