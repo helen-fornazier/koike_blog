@@ -143,3 +143,6 @@ Summary: 1/83 PASSED, 28 SKIPPED, 0 FAILED
 # What to check next
 
 Virtme-ng has several other features, such as remote builds and debugging support. For more information, check the project page: https://github.com/arighi/virtme-ng
+
+---
+{{< igalia-note >}}
