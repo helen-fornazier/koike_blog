@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Virtme-ng: cross-architecture and kselftests"
-date: 2026-04-13
+date: 2026-05-14
 tags: ["igalia", "linux-kernel"]
 archives: ["2026"]
 description: "Virtme is a handy tool for Linux kernel development. If you are not familiar with it yet, check this post."
@@ -8,9 +8,7 @@ draft: true
 image: "/images/virtme-ng-boot.png"
 ---
 
-If you are a Linux kernel developer, you have probably heard about [virtme](https://web.git.kernel.org/pub/scm/utils/kernel/virtme/virtme.git), originally written by Andy Lutomirski.
-
-Virtme boots your compiled Linux kernel in QEMU while reusing your host root filesystem, which makes kernel testing much easier.
+If you are a Linux kernel developer, you have probably heard about [virtme](https://web.git.kernel.org/pub/scm/utils/kernel/virtme/virtme.git), originally written by Andy Lutomirski. If you never heard about it, this tool boots your compiled Linux kernel in QEMU while reusing your host root filesystem, which makes kernel testing much easier.
 
 Now, meet [virtme-ng](https://github.com/arighi/virtme-ng), written by Andrea Righi and based on the original virtme, with several improvements. Virtme-ng can configure and compile the kernel, generate a rootfs, and run the guest for different architectures. The full workflow is optimized to get you up and running quickly.
 
@@ -20,7 +18,6 @@ Now, meet [virtme-ng](https://github.com/arighi/virtme-ng), written by Andrea Ri
 
 ```
 sudo apt install virtme-ng
-git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 cd linux
 ```
 
@@ -33,6 +30,8 @@ vng O=.virtme/build --build
 ```
 
 No need to create the `.virtme/build` folder; `vng` creates it for you.
+
+This command will automatically generate a .config file optimized for use with virtme, or reuse an existing .config if one is already present.
 
 ### Execute
 
@@ -63,8 +62,7 @@ And you should see a shell running your kernel:
 Install QEMU and the toolchain for the architecture you are interested in:
 
 ```
-sudo apt install qemu-system-arm
-sudo apt install gcc-aarch64-linux-gnu
+sudo apt install qemu-system-arm gcc-aarch64-linux-gnu
 ```
 
 ### Build
