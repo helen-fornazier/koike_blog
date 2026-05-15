@@ -4,7 +4,7 @@ date: 2026-05-15
 tags: ["igalia", "linux-kernel"]
 archives: ["2026"]
 description: "Virtme is a handy tool for Linux kernel development. If you are not familiar with it yet, check this post."
-draft: true
+draft: false
 image: "/images/virtme-ng-boot.png"
 ---
 
