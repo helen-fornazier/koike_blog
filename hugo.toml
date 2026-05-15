@@ -90,6 +90,9 @@ archive = "archives"
 tag = "tags"
 
 [markup]
+[markup.tableOfContents]
+startLevel = 1
+endLevel = 4
 [markup.highlight]
 anchorLineNos = false
 codeFences = true

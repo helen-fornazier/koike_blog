@@ -1,0 +1,25 @@
+<style>
+  .igalia-note .igalia-note__link {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+  .igalia-note .igalia-note__link:hover {
+    text-decoration-thickness: 2px;
+  }
+</style>
+{{- $title := .Get "title" | default "About this post" -}}
+{{- $home := .Get "home" | default "https://www.igalia.com/" -}}
+{{- $kernel := .Get "kernel" | default "https://www.igalia.com/technologies/kernel/" -}}
+{{- $kernelLabel := .Get "kernel_label" | default "Igalia Linux Kernel" -}}
+<div class="igalia-note color-bg-subtle border rounded-2 p-3 my-4 f6">
+  <h4 class="f5 text-bold mt-0 mb-2">{{ $title }}</h4>
+  <p class="mb-0">
+    I wrote this post while working at
+    <a href="{{ $home }}" class="Link--primary igalia-note__link">Igalia</a>.
+    For more from Igalia Kernel Team, see the
+    <a href="{{ $kernel }}" class="Link--primary igalia-note__link">{{ $kernelLabel }}</a>
+    page.
+  </p>
+</div>
