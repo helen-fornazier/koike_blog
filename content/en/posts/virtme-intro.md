@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Virtme-ng: cross-architecture and kselftests"
+title: "Virtme-ng: first steps / cross-arch / kselftests / remote build"
 date: 2026-05-15
 tags: ["igalia", "linux-kernel"]
 archives: ["2026"]
@@ -14,7 +14,7 @@ If you are a Linux kernel developer, you have probably heard about [virtme](http
 
 Now, meet [virtme-ng](https://github.com/arighi/virtme-ng), written by Andrea Righi and based on the original virtme, with several improvements. Virtme-ng can configure and compile the kernel, generate a rootfs, and run the guest for different architectures. The full workflow is optimized to get you up and running quickly.
 
-# Trying it out: Native
+# First steps
 
 ## Install on Ubuntu/Debian
 
@@ -59,7 +59,7 @@ And you should see a shell running your kernel:
 (base) koike@virtme-ng:~/ig/kernel$
 ```
 
-# Trying it out: Cross-architecture
+# Cross-arch
 
 Install QEMU and the toolchain for the architecture you are interested in:
 
@@ -100,7 +100,7 @@ You should then get a shell in an emulated environment for your target architect
 root@virtme-ng:/#
 ```
 
-# Executing kselftests with virtme-ng
+# Kselftests
 
 The Linux kernel source tree includes a self-test framework called kselftests that typically requires booting into the target kernel to build and run its tests.
 
